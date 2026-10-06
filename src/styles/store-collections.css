@@ -1,0 +1,32 @@
+:root { --ivory: #f6f4e9; --ink: #25231d; --muted: #908b7b; --clay: #7e1741; --page-gutter: 5vw; }
+.collections-section { padding-top: 37px; background: var(--ivory); scroll-margin-top: 0; }
+.section-curve { top: -71px; height: 72px; }
+.collection-ribbon { position: absolute; width: 100%; height: 72px; left: 0; top: -71px; overflow: visible; pointer-events: none; }
+.collection-ribbon text { fill: #f7f0d9; font: italic 15px var(--font-editorial),Georgia,serif; letter-spacing: .2px; }
+.collection-intro { gap: 30px; margin-bottom: 30px; }
+.collection-heading .eyebrow { margin-bottom: 9px; font-size: 7px; letter-spacing: .12em; color: #9d998e; }
+.collection-heading h2 { font: 900 clamp(44px,4.6vw,68px)/1 var(--font-display),Georgia,serif; letter-spacing: -.065em; transform: scaleX(.78); transform-origin: left; }
+.collection-copy { padding: 0 0 8px; max-width: 260px; }
+.collection-copy p { font: 400 9px/1.8 var(--font-sans),sans-serif; color: #8d897e; margin: 0; }
+.collection-copy .eyebrow { display: none; }
+.mood-rail { gap: 23px; padding-top: 1px; padding-bottom: 13px; }
+.mood-card { flex: 0 0 calc((100vw - 10vw - 115px) / 6); }
+.mood-image-mask { aspect-ratio: 3 / 4.35; border-radius: 50% 50% 0 0 / 34.5% 34.5% 0 0; background: #ddd4c7; outline: 1px solid #ada89645; outline-offset: 4px; }
+.image-parallax { inset: 0 -8px; }
+.image-hover { inset: 0; }
+.image-caption,.mood-image-mask::after,.label-line { display: none; }
+.mood-label { justify-content: center; gap: 7px; padding: 15px 0 0; }
+.mood-label h3 { font-size: 7px; letter-spacing: .13em; color: #807b6f; }
+.mood-index { font-size: 6px; letter-spacing: .04em; color: #aaa596; }
+.rail-controls { margin-top: 16px; }
+.rail-hint { font-size: 6px; letter-spacing: .12em; color: #a6a193; }
+.rail-progress,.rail-counter,.rail-arrows,.hint-line { display: none; }
+.section-breathing-room { height: 65px; }
+@media(hover:hover) and (pointer:fine) { .mood-card:hover .image-hover { transform: scale(1.018); }.mood-card:hover .mood-label { transform: none; } }
+@media(min-width:768px) and (max-width:1100px) { .mood-rail { gap: 17px; }.mood-card { flex-basis: calc((100vw - 10vw - 85px) / 6); }.mood-label { gap: 5px; }.mood-label h3 { font-size: 6px; letter-spacing: .07em; } }
+@media(max-width:767px) {
+  :root { --page-gutter: 7vw; }.collections-section { padding-top: 30px; }.section-curve,.collection-ribbon { top: -49px; height: 50px; }.collection-ribbon text { font-size: 17px; }
+  .collection-intro { display: block; margin-bottom: 28px; }.collection-heading h2 { font-size: 52px; }.collection-heading .eyebrow { font-size: 6px; }.collection-copy { margin-top: 12px; padding: 0; }.collection-copy p { font-size: 9px; }.collection-copy p br { display: none; }
+  .mood-rail { gap: 20px; }.mood-card { flex-basis: 76vw; }.mood-image-mask { aspect-ratio: 3 / 4.1; border-radius: 50% 50% 0 0 / 36.6% 36.6% 0 0; }.mood-label { gap: 8px; justify-content: flex-start; padding-top: 17px; }.mood-label h3 { font-size: 8px; }.mood-index { font-size: 7px; }
+  .rail-controls { margin-top: 17px; }.rail-arrows { display: flex; gap: 19px; }.rail-hint { font-size: 7px; }.section-breathing-room { height: 75px; }
+}

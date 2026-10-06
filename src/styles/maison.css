@@ -1,0 +1,104 @@
+/* Editorial composition for the house homepage. */
+.aira-home .home-body { background: var(--paper); }
+.house-invitation { position: relative; overflow: hidden; padding: 100px 6vw 80px; text-align: center; background: #e6dbc8; }
+.house-invitation .aira-eyebrow { color: #8b7156; font-size: 8px; letter-spacing: .2em; }
+.house-invitation h2 { font: 400 clamp(34px, 4.6vw, 70px)/1.1 var(--font-editorial), serif; letter-spacing: -.03em; margin: 28px 0 25px; }
+.house-invitation h2 em { color: #815c47; font-weight: 300; }
+.invitation-seal { width: 40px; height: 48px; margin: 24px auto; border: 1px solid #bda98d; border-radius: 50%; font: italic 400 34px/44px var(--font-editorial), serif; color: #815c47; }
+.house-invitation > p:last-child { font-size: 10px; line-height: 1.9; color: #8a7965; }
+.silk-thread { display: block; width: min(900px, 90%); height: auto; margin: 15px auto 24px; stroke: #9e794e; stroke-width: 1; }
+.silk-thread path:last-child { opacity: .35; }
+.aira-home .moods-section { background: #33251f; color: #efe4d1; padding: 90px 0 65px; }
+.aira-home .moods-heading { padding-inline: 5vw; grid-template-columns: 1.5fr 1fr; }
+.aira-home .moods-heading .aira-eyebrow { color: #b5a083; font-size: 8px; }
+.aira-home .moods-heading .aira-section-heading { font-size: clamp(47px, 5.6vw, 85px); }
+.aira-home .moods-heading > div:last-child > p { color: #c7b59c; font-size: 23px; }
+.aira-home .moods-heading .aira-text-link { color: #dfc8a9; font-size: 8px; }
+.aira-home .mood-rail { padding: 55px 5vw 25px; gap: 28px; }
+.aira-home .mood-card { flex-basis: clamp(245px, 24vw, 380px); }
+.aira-home .mood-card:nth-child(2) { margin-top: 65px; }
+.aira-home .mood-card:nth-child(3) { margin-top: 0; }
+.aira-home .mood-card:nth-child(4) { margin-top: 65px; }
+.aira-home .mood-card:nth-child(6) { margin-top: 65px; }
+.aira-home .mood-portrait { aspect-ratio: 3/4; background: #a98967; }
+.aira-home .mood-portrait::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 75%, #24161066); pointer-events: none; }
+.aira-home .mood-portrait img { filter: saturate(.82); }
+.mood-index { position: absolute; z-index: 1; left: 18px; bottom: 15px; color: #f5eada; font: italic 300 33px var(--font-editorial), serif; }
+.aira-home .mood-caption { border-color: #b9a18040; padding: 18px 0 16px; }
+.aira-home .mood-caption h3 { font-size: 29px; font-weight: 300; }
+.aira-home .mood-caption span { color: #bba180; font-size: 8px; }
+.aira-home .rail-bottom { padding-inline: 5vw; }
+.aira-home .rail-bottom p { color: #bba88d; font-size: 8px; letter-spacing: .06em; }
+.aira-home .rail-rule { background: #b9a18040; }
+.aira-home .rail-rule span { background: #d3bc99; }
+.aira-home .rail-arrows button { border-color: #b9a18060; width: 40px; height: 40px; font-size: 19px; transition: background .3s; }
+.aira-home .rail-arrows button:hover:not(:disabled) { background: #d3bc991a; }
+.aira-home .home-section { padding: 110px 5vw; }
+.aira-home .section-title-row { margin-bottom: 50px; }
+.aira-home .section-title-row .aira-eyebrow { font-size: 8px; }
+.aira-home .aira-section-heading { font-weight: 300; }
+.aira-home .featured-grid { grid-template-columns: 1.35fr 1fr 1fr; gap: 30px; align-items: center; }
+.aira-home .featured-grid .product-card:first-child .product-card-portrait { aspect-ratio: 3/4; }
+.aira-home .featured-grid .product-card:nth-child(2) { margin-top: 85px; }
+.aira-home .featured-grid .product-card:nth-child(3) { margin-top: -65px; }
+.aira-home .house-section { padding: 35px 9vw 140px 5vw; gap: 12vw; }
+.aira-home .house-portrait { aspect-ratio: 4/5; }
+.aira-home .house-portrait::before { content: ""; position: absolute; z-index: 1; inset: 18px; border: 1px solid #eee0c350; pointer-events: none; }
+.aira-home .house-copy .aira-eyebrow { font-size: 8px; }
+.aira-home .house-copy > p:not(.aira-eyebrow) { color: #857360; font-size: 11px; }
+.aira-home .campaign-section { margin-inline: 3vw; height: 72vw; max-height: 850px; min-height: 550px; }
+.aira-home .campaign-section > img { filter: saturate(.8); }
+.aira-home .campaign-copy { left: 6vw; }
+.aira-home .campaign-copy .aira-eyebrow { font-size: 8px; }
+.aira-home .campaign-copy h2 { font-weight: 300; }
+.aira-home .journal-home-grid { gap: 35px; grid-template-columns: 1.15fr .9fr .9fr; }
+.aira-home .journal-home-grid article:nth-child(2) { margin-top: 80px; }
+.aira-home .journal-home-grid article:nth-child(3) { margin-top: 30px; }
+.aira-home .journal-home-image { aspect-ratio: 4/5; }
+.aira-home .journal-home-image img { filter: saturate(.78); }
+.aira-home .journal-home-grid h3 { font-weight: 300; }
+.aira-home .journal-home-grid article > p:not(.aira-eyebrow) { color: #857360; font-size: 11px; }
+.aira-home .aira-text-link { font-size: 8px; }
+.aira-home .styling-section { margin: 0 5vw 90px; background: #dfd4c2; padding: 70px 6vw; border-top: 1px solid #bba386; }
+.aira-home .styling-section h2 { font-weight: 300; }
+.aira-home .styling-section p:not(.aira-eyebrow) { color: #79654f; font-size: 11px; }
+.aira-footer { background: #33251f; color: #eee4d2; }
+.aira-home[data-editorial-ready] .editorial-enter { opacity: 0; transform: translateY(25px); transition: opacity .85s ease, transform .85s cubic-bezier(.2,.65,.2,1); }
+.aira-home[data-editorial-ready] .editorial-visible { opacity: 1; transform: translateY(0); }
+@media (max-width: 767px) {
+  .house-invitation { padding: 75px 7vw; }
+  .house-invitation h2 { font-size: 36px; }
+  .house-invitation > p:last-child { font-size: 9px; }
+  .aira-home .moods-section { padding: 65px 0 45px; }
+  .aira-home .moods-heading { grid-template-columns: 1fr; gap: 24px; padding-inline: 6vw; }
+  .aira-home .moods-heading .aira-section-heading { font-size: 49px; }
+  .aira-home .moods-heading > div:last-child > p { font-size: 20px; }
+  .aira-home .mood-rail { padding: 35px 6vw 20px; gap: 20px; }
+  .aira-home .mood-card { flex-basis: 71vw; }
+  .aira-home .mood-card:nth-child(even) { margin-top: 40px; }
+  .aira-home .mood-caption h3 { font-size: 27px; }
+  .aira-home .rail-bottom { padding-inline: 6vw; gap: 15px; }
+  .aira-home .rail-bottom p { max-width: 85px; line-height: 1.7; }
+  .aira-home .home-section { padding: 75px 6vw; }
+  .aira-home .section-title-row { align-items: start; gap: 22px; }
+  .aira-home .section-title-row .aira-section-heading { font-size: 45px; }
+  .aira-home .featured-grid { grid-template-columns: 1fr 1fr; gap: 24px 16px; align-items: start; }
+  .aira-home .featured-grid .product-card:first-child { grid-column: 1 / -1; }
+  .aira-home .featured-grid .product-card:first-child .product-card-portrait { aspect-ratio: 4/5; }
+  .aira-home .featured-grid .product-card:nth-child(2), .aira-home .featured-grid .product-card:nth-child(3) { margin-top: 0; }
+  .aira-home .house-section { grid-template-columns: 1fr; padding: 0 6vw 75px; gap: 65px; }
+  .aira-home .house-copy .aira-section-heading { font-size: 53px; }
+  .aira-home .campaign-section { margin-inline: 0; height: 115svh; min-height: 650px; max-height: 820px; }
+  .aira-home .campaign-copy { left: 7vw; top: auto; bottom: 65px; transform: none; }
+  .aira-home .campaign-copy h2 { font-size: 72px; }
+  .aira-home .campaign-section::after { background: linear-gradient(transparent 20%, #32241d90); }
+  .aira-home .journal-home-grid { grid-template-columns: 1fr; gap: 42px; }
+  .aira-home .journal-home-grid article:nth-child(2), .aira-home .journal-home-grid article:nth-child(3) { margin-top: 0; }
+  .aira-home .journal-home-grid article:nth-child(2) { margin-left: 12%; }
+  .aira-home .journal-home-grid article:nth-child(3) { margin-right: 12%; }
+  .aira-home .styling-section { margin: 0 6vw 65px; padding: 45px 7vw; }
+  .aira-home .styling-section h2 { font-size: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aira-home[data-editorial-ready] .editorial-enter { opacity: 1; transform: none; transition: none; }
+}

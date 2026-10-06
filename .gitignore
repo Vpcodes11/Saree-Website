@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+.preview/
+artwork/history/
+artwork/aira-store-v[2-7].blend
+*.blend1
+*.blend2
+*.log

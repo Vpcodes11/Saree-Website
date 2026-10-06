@@ -1,0 +1,115 @@
+/* Material and editorial art direction shared by the two renderers. */
+:root { --ivory: #f2ede3; --ink: #372b26; --muted: #927d68; --clay: #8d5d44; --grain: url('/textures/paper-grain.svg'); }
+.css-boutique-stage { background: #d1bd9d; }
+.css-boutique-wall { background: var(--grain), repeating-linear-gradient(90deg,transparent 0 960px,#bca38450 962px,#f1e2c480 965px,transparent 969px), radial-gradient(ellipse at 50% 30%,#ebdcc4,#c9b393 70%,#ae9272); box-shadow: inset 0 0 120px #7d5d3d35; }
+.css-boutique-ceiling { background: var(--grain), repeating-linear-gradient(0deg,transparent 0 1000px,#aa8b66 1001px 1010px,#e7d2b0 1011px 1020px,transparent 1021px 1120px),linear-gradient(90deg,#bca58b,#e2ceb0 50%,#bca58b); box-shadow: inset 0 0 160px #8e6d4d50; }
+.css-boutique-cornice { background: linear-gradient(#c4ac89,#e9d9bd 23%,#c7af8b 65%,#745640 72%,#ae9063 78%,#dac397 82%,#a58965); box-shadow: 0 14px 30px #f9deac50; }
+.css-boutique-floor { background: var(--grain),linear-gradient(90deg,transparent 32.9%,#ac906154 33%,#ddc5a277 33.1%,transparent 33.2%,transparent 66.7%,#ac906154 66.8%,transparent 67%),repeating-linear-gradient(0deg,transparent 0 383px,#b2a08780 384px,#e4d6c080 385px,transparent 386px),repeating-linear-gradient(90deg,transparent 0 478px,#af9b8280 479px,#e7d9c580 480px),radial-gradient(ellipse at 60% 40%,#ecdfc8,#ceb99d 65%,#ac9175); box-shadow: inset 0 0 180px 40px #6c4c303f; }
+.css-boutique-floor:after { opacity: .7; background: repeating-linear-gradient(128deg,transparent 0 700px,#fff0ce70 700px 980px,transparent 980px 1450px),repeating-linear-gradient(19deg,transparent 0 81px,#836e511a 82px,transparent 84px 181px); }
+.css-boutique-cabinet { background: linear-gradient(90deg,#291a18cc,#41272bcc 6%,#321e23 10%,#321e23 90%,#493026b3 94%,#251a17cc),url('/textures/walnut-grain.svg'); border: 10px solid #493125; border-top-color: #76553d; box-shadow: 8px 20px 32px #34221965,inset 0 0 55px #190f10; }
+.css-boutique-cabinet-plinth { background: linear-gradient(#644532,#b59a6a 4%,#4a3326 6%,#644532 80%,#322219); }
+.css-boutique-shelf { border-bottom: 7px solid #785638; box-shadow: 0 2px 0 #ad9063,0 5px 0 #271711,inset 0 18px 30px #1f111166; }
+.css-boutique-shelf:before { background: #dec099; box-shadow: 0 8px 22px 6px #efc79128; }
+.css-boutique-silks { height: var(--pile-height,62px); border-radius: 10px 13px 7px 9px; background: repeating-linear-gradient(0deg,#2d1d1933 0 2px,#eedcba55 3px 4px,var(--silk) 5px 17px,#efe0c766 18px 19px,var(--silk-secondary) 20px 32px,#edddc155 33px 34px); box-shadow: 4px 8px 8px #190d1245,inset -5px 0 7px #24151044,inset 6px 0 10px #ffffff2a; transform: translateZ(14px) rotate(var(--pile-tilt,0deg)); }
+.css-boutique-silks:after { width: 12px; left: 9px; background: url('/textures/brocade.svg') center/38px 45px,#b69a67; opacity: .68; border-color: #e1c48c88; }
+.css-boutique-portrait { border: 5px solid #bda178; box-shadow: 0 0 0 2px #d5bb91,0 0 0 9px #79624d,0 15px 35px #4d382944; }
+.css-boutique-portrait-caption { color: #6c5140; font: 10px var(--font-sans),sans-serif; letter-spacing: 4px; }
+.css-boutique-picture-light { background: linear-gradient(#d2b384,#8f704c); box-shadow: 0 5px 0 #e6c492,0 30px 65px 20px #f7dba74a; }
+.css-boutique-portal { border-width: 10px; border-color: #a8885c; box-shadow: inset 0 0 0 2px #e2c693,inset 0 0 0 5px #75543b,0 0 0 4px #a49078,0 0 0 11px #d5c0a1; }
+.css-boutique-portal:before,.css-boutique-portal:after { width: 40px; background: linear-gradient(90deg,#a18563,#d7c3a2 45%,#b19a76); }
+.css-boutique-portal:before { left: -25px; }.css-boutique-portal:after { right: -25px; }
+.css-boutique-chandelier { border: 0; box-shadow: none; background: none; }.css-boutique-chandelier svg { display: block; width: 100%; height: 100%; }
+.css-boutique-back-wall { background: var(--grain),radial-gradient(ellipse at 50% 40%,#72464a,#4c282e 65%,#341e24); box-shadow: inset 0 0 180px #1a0b1550; }
+.css-boutique-rear-arch { border-width: 8px; border-color: #b49869; box-shadow: 0 0 0 3px #382116,inset 0 0 0 1px #e0c59b; }
+.css-boutique-rear-screen { border: 4px solid #bca078; width: 872px; height: 494px; left: calc(50% - 436px); top: 285.8px; }
+.css-boutique-rear-wordmark { font: 60px var(--font-editorial),Georgia,serif; letter-spacing: 19px; padding-left: 19px; }
+.css-boutique-rear-caption { font: 10px var(--font-sans),sans-serif; letter-spacing: 6px; bottom: 118px; }
+.css-boutique-atmosphere { background: radial-gradient(ellipse at 52% 48%,transparent 30%,#281a1638 100%); box-shadow: inset 0 0 100px #29170e28; }
+
+/* Foreground textile furniture creates a layered, inhabited boutique. */
+.css-boutique-console { position: absolute; left: 0; top: 0; width: 560px; height: 210px; transform: translate3d(-770px,-210px,620px); transform-style: preserve-3d; }
+.console-front { width: 560px; height: 210px; background: linear-gradient(90deg,#ffffff0d,transparent 30%,#00000019),url('/textures/walnut-grain.svg'); border-top: 8px solid #bca27b; border-bottom: 12px solid #463124; box-shadow: 0 12px 35px #26191265; }
+.console-front:after { content: 'A I R A'; position: absolute; left: 400px; bottom: 35px; color: #c6b18c; font: 11px Georgia,serif; letter-spacing: 3px; }
+.console-side { left: 560px; width: 600px; height: 210px; transform-origin: 0 0; transform: rotateY(90deg); background: url('/textures/walnut-grain.svg'); border-top: 8px solid #baa180; }
+.console-top { width: 560px; height: 600px; transform-origin: 0 0; transform: translateZ(-600px) rotateX(90deg); background: var(--grain),linear-gradient(120deg,#ddc6a2,#bda17d); border: 8px solid #bca27b; }
+.css-boutique-console-pile { position: absolute; transform-style: preserve-3d; transform: translateZ(15px); }
+.css-boutique-console-pile > .css-boutique-silks { width: 148px; height: 46px; }
+.console-cloth-top { position: absolute; width: 148px; height: 215px; left: 0; top: 0; transform-origin: 0 0; transform: translateZ(-201px) rotateX(90deg); background: url('/textures/brocade.svg') center/75px 88px,var(--silk); border-radius: 9px; box-shadow: inset 0 0 18px #ffffff24; }
+.console-drape { position: absolute; left: 188px; top: -20px; width: 140px; height: 225px; transform: translateZ(27px) rotate(-2deg); border-radius: 7px 7px 16px 12px; background: url('/textures/brocade.svg') center/82px 98px,linear-gradient(90deg,#301821,transparent 12%,#a17a6c33 28%,#32172488 42%,transparent 58%,#dcc19c22 76%,#2e162488),#80404c; border: 6px solid #aa8b5e; box-shadow: 5px 4px 14px #1d101255; }
+.css-boutique-hanging-rail { position: absolute; transform: translate3d(-800px,-685px,-350px) rotateY(28deg); transform-style: preserve-3d; width: 460px; height: 685px; }
+.hanging-rod { width: 460px; height: 12px; background: linear-gradient(#e2c89a,#9e7f50); box-shadow: 0 7px 14px #20121050; }
+.hanging-silk { position: absolute; top: 30px; width: 85px; height: 595px; border-radius: 25px 25px 4px 4px; background: url('/textures/brocade.svg') center/75px 90px,linear-gradient(90deg,#00000030,transparent 18%,#ffffff30 32%,#00000044 50%,#ffffff20 70%,#00000040),var(--silk); box-shadow: 8px 0 15px #1b101c44; border-bottom: 25px solid #b49c7066; transform-origin: top center; }
+.hanging-silk:before { content: ''; position: absolute; left: 12px; top: -18px; width: 54px; height: 18px; border: 2px solid #c6b08a; border-bottom: 0; border-radius: 40px 40px 0 0; }
+.hanging-silk span { position: absolute; inset: 0; background: var(--grain); }
+.css-boutique-campaign-totem { width: 340px; height: 716px; transform: translate3d(445px,-716px,550px) rotateY(-8deg); }
+.campaign-totem-photo { width: 340px; height: 674px; background: url('/images/campaign.jpg') 73% center/cover; border-radius: 170px 170px 0 0; border: 6px solid #b6986e; box-shadow: 0 0 0 3px #e4d1ac,18px 20px 50px #39221f44; }
+.campaign-totem-plinth { width: 370px; height: 42px; margin-left: -15px; background: var(--grain),linear-gradient(90deg,#ad9270,#e3cfad 45%,#b59b78); border-top: 4px solid #bba078; }
+.css-boutique-campaign-totem > span { position: absolute; bottom: 15px; width: 340px; text-align: center; color: #614a39; font: 9px var(--font-sans),sans-serif; letter-spacing: 3px; }
+
+/* An editorial layer leaves room for the boutique's composition. */
+.journey { height: 410svh; }
+.journey .site-header { height: 94px; border-bottom-color: #f5ead51f; }
+.journey .wordmark { font-size: 39px; letter-spacing: .2em; }
+.wordmark:after { content: 'THE ART OF THE SAREE'; display: block; font: 5.5px var(--font-sans),sans-serif; letter-spacing: .23em; margin-top: 10px; }
+.journey .desktop-nav button,.journey .nav-utilities button { font-size: 9px; letter-spacing: .13em; font-weight: 500; }
+.journey-introduction { top: 28%; }
+.journey-title { font-size: clamp(68px,7.1vw,112px); font-weight: 300; line-height: .92; letter-spacing: -.04em; }
+.journey-title .headline-line:last-child { font-style: italic; }
+.journey-title .headline-line > span > span { color: #e0c393; }
+.journey-eyebrow { font-size: 7px; font-weight: 500; letter-spacing: .26em; margin-bottom: 22px; color: #f1dfbf; }
+.journey-description { font-size: 11px; line-height: 1.9; letter-spacing: .04em; margin: 24px 0 28px; color: #f5e9d7; }
+.journey-enter { width: 209px; justify-content: space-between; gap: 0; font-size: 8px; letter-spacing: .17em; border-bottom-color: #dac39e99; }
+.journey-enter svg { width: 24px; }
+.journey-shade { background: linear-gradient(90deg,#160e0b70,transparent 43%),linear-gradient(180deg,#1b110f77,transparent 23%,transparent 72%,#21161380); }
+.journey-bottom { bottom: 31px; padding-bottom: 15px; border-bottom-color: #ead2ad40; }
+.journey-chapter { font-size: 7px; letter-spacing: .16em; opacity: .65; }
+.journey-chapter span { color: #e6c796; }
+.journey-scroll-cue { font-size: 7px; letter-spacing: .2em; }
+.journey-signature { font-size: 6px; letter-spacing: .23em; }
+.journey-caption > p:not(.eyebrow) { font-size: clamp(34px,3.4vw,54px); font-weight: 300; line-height: 1.08; }
+.caption-thread { bottom: 25%; }
+.caption-perspective { top: 28%; }
+.caption-campaign { bottom: 23%; }
+.caption-campaign > p:not(.eyebrow) { font-size: clamp(62px,7vw,110px); }
+.silk-entrance-copy > span { font-size: 85px; font-weight: 300; letter-spacing: .25em; }
+.silk-pattern { filter: saturate(.85); }
+.silk-panel:after { content: ''; position: absolute; inset: 0; pointer-events: none; background: var(--grain),repeating-linear-gradient(90deg,#05000222 0,transparent 8%,#f0cfad0d 15%,#04000335 23%,transparent 32%); }
+
+/* A curved oxblood ribbon echoes the reference's campaign-to-collection beat. */
+.collections-section { padding-top: 45px; background-image: var(--grain); }
+.section-curve { top: -117px; height: 118px; }
+.collection-ribbon { position: absolute; width: 100%; height: 118px; left: 0; top: -117px; overflow: visible; pointer-events: none; }
+.collection-ribbon path { fill: none; stroke: #5b2635; stroke-width: 28px; }
+.collection-ribbon text { fill: #eedbc0; font-family: var(--font-editorial),Georgia,serif; font-size: 12px; letter-spacing: .6px; }
+.collection-intro { margin-bottom: 40px; align-items: center; }
+.collection-heading h2 { font-size: clamp(46px,4.8vw,72px); letter-spacing: -.05em; font-weight: 500; }
+.collection-heading .eyebrow { font-size: 7px; letter-spacing: .23em; margin-bottom: 16px; }
+.collection-copy p { font-size: 21px; line-height: 1.25; font-weight: 300; color: #756251; }
+.collection-copy .eyebrow { font-size: 6px; letter-spacing: .21em; }
+.mood-rail { gap: 25px; }
+.mood-card { flex-basis: calc((100vw - 12vw - 140px) / 6); }
+.mood-image-mask { aspect-ratio: 3 / 4.65; outline: 1px solid #a894751a; outline-offset: 5px; }
+.mood-label { justify-content: center; gap: 7px; padding-top: 18px; }
+.mood-index { font-size: 6px; color: #a39079; }
+.mood-label h3 { font-size: 8px; letter-spacing: .13em; }
+.image-caption { display: none; }
+.rail-controls { margin-top: 29px; }
+.rail-hint { font-size: 6px; letter-spacing: .2em; }
+.section-breathing-room { height: 125px; }
+@media (min-width:768px) and (max-height:760px) { .journey-title { font-size: 79px; }.journey-description { margin: 19px 0 22px; } }
+@media (min-width:768px) and (max-width:1100px) { .mood-card { flex-basis: calc((100vw - 10vw - 140px) / 6); }.journey .desktop-nav { gap: 22px; } }
+@media (max-width:767px) {
+  .journey { height: 350svh; }.journey.is-static { height: 100svh; }
+  .journey .site-header { height: 83px; }.journey .wordmark { font-size: 31px; }.wordmark:after { font-size: 4px; letter-spacing: .22em; margin-top: 7px; }
+  .journey-introduction { top: auto; bottom: 180px; }.journey-title { font-size: clamp(61px,17vw,104px); }.journey-eyebrow { font-size: 6px; letter-spacing: .19em; }
+  .journey-description { font-size: 10px; margin: 22px 0; }.journey-enter { font-size: 7px; width: 193px; }.journey .nav-utilities button { font-size: 8px; }
+  .journey-bottom { bottom: 29px; }.journey-chapter { font-size: 6px; letter-spacing: .08em; }.journey-signature { font-size: 6px; }.journey-scroll-cue { font-size: 6px; }
+  .journey-shade { background: linear-gradient(180deg,#160e1455,transparent 25%,transparent 38%,#22171988 77%,#27191880); }
+  .journey-caption > p:not(.eyebrow) { font-size: 36px; }.caption-campaign > p:not(.eyebrow) { font-size: 66px; }
+  .css-boutique-campaign-totem { transform: translate3d(35px,-716px,550px) rotateY(-8deg); }.campaign-totem-photo { background-position: 100% center; }
+  .collections-section { padding-top: 28px; }.section-curve,.collection-ribbon { top: -64px; height: 65px; }.collection-ribbon text { display: none; }
+  .collection-intro { margin-bottom: 35px; }.collection-heading h2 { font-size: 53px; }.collection-copy p { font-size: 20px; }.collection-copy .eyebrow { font-size: 6px; }
+  .mood-card { flex-basis: 76vw; }.mood-rail { gap: 21px; }.mood-image-mask { aspect-ratio: 3 / 4.2; }.mood-label { justify-content: flex-start; gap: 11px; }.mood-label h3 { font-size: 8px; letter-spacing: .18em; }.mood-index { font-size: 7px; }
+  .rail-hint { font-size: 6px; }.section-breathing-room { height: 85px; }
+}
+@media (prefers-reduced-motion:reduce) { .journey { height: 100svh; } }

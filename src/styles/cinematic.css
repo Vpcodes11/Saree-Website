@@ -1,0 +1,60 @@
+:root { --ivory: #f5f0e7; --ink: #382921; --muted: #8b7965; --clay: #926647; }
+.cinematic-journey { position: relative; height: 370svh; background: #2a1710; color: #fff8e9; }
+.cinema-stage { position: sticky; top: 0; height: 100svh; overflow: hidden; isolation: isolate; --pointer-x: 0; --pointer-y: 0; min-height: 620px; }
+.cinema-picture,.cinema-background,.cinema-models,.cinema-film,.cinema-film-media,.cinema-shade { position: absolute; inset: 0; }
+.cinema-picture { overflow: hidden; }
+.cinema-background,.cinema-models { transform-origin: 73% 34%; will-change: transform; inset: -1%; }
+.cinema-background img,.cinema-models img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.cinema-background img { translate: calc(var(--pointer-x) * -.4px) calc(var(--pointer-y) * -.4px); }
+.cinema-models img { translate: calc(var(--pointer-x) * -1px) calc(var(--pointer-y) * -1px); }
+.cinema-film { opacity: 0; visibility: hidden; z-index: 1; overflow: hidden; pointer-events: none; }
+.cinema-film-media img,.cinema-film-media video { width: 100%; height: 100%; object-fit: cover; object-position: 50% center; }
+.cinema-film-media video { position: absolute; inset: 0; }
+.cinema-shade { z-index: 2; pointer-events: none; background: linear-gradient(90deg,#10070790,transparent 54%),linear-gradient(180deg,#12090788,transparent 24%,transparent 73%,#0f08076b); }
+.cinematic-journey .site-header { z-index: 5; height: 100px; border-bottom: 1px solid #f7e0b425; }
+.cinematic-journey .wordmark { font-size: 40px; letter-spacing: .16em; }
+.cinematic-journey .wordmark:after { content: 'THE ART OF THE SAREE'; display: block; font: 5px var(--font-sans),sans-serif; letter-spacing: .24em; margin-top: 10px; }
+.cinematic-journey .desktop-nav button,.cinematic-journey .nav-utilities button { font-size: 10px; font-weight: 400; letter-spacing: .08em; }
+.cinematic-journey .desktop-nav { gap: 35px; }
+.cinema-intro { position: absolute; z-index: 3; left: var(--page-gutter); top: 29%; pointer-events: none; }
+.cinema-intro .eyebrow { font-size: 8px; letter-spacing: .24em; margin: 0 0 24px; }
+.cinema-title { font-size: clamp(78px,7.7vw,126px); font-weight: 400; line-height: .94; letter-spacing: -.038em; }
+.cinema-title .headline-line { padding-bottom: 5px; }
+.cinema-title .headline-line:last-child { font-style: normal; }
+.cinema-title .headline-line:last-child > span > span { color: #d3b67d; }
+.cinema-description { font-size: 11px; line-height: 1.85; margin: 26px 0 30px; color: #f4e9d9; }
+.cinema-enter { pointer-events: auto; display: flex; align-items: center; justify-content: space-between; gap: 29px; padding: 15px 18px; background: #deca9e; color: #352111; text-transform: uppercase; font-size: 8px; letter-spacing: .1em; min-width: 235px; transition: background .35s ease; }
+.cinema-enter:hover { background: #f0ddb2; }.cinema-enter > span { font-size: 19px; line-height: 1; }
+.cinema-caption { position: absolute; z-index: 3; opacity: 0; visibility: hidden; pointer-events: none; }
+.cinema-caption .eyebrow { font-size: 7px; letter-spacing: .21em; margin: 0 0 16px; color: #edd3a6; }
+.cinema-caption > p:not(.eyebrow) { font: 300 clamp(35px,3.5vw,62px)/1.05 var(--font-editorial),Georgia,serif; letter-spacing: -.025em; margin: 0; }
+.cinema-caption em { font-weight: 300; }
+.cinema-thread { left: var(--page-gutter); bottom: 25%; }
+.cinema-perspective { left: var(--page-gutter); top: 33%; }
+.cinema-expression { left: var(--page-gutter); bottom: 24%; }
+.cinema-expression > p:not(.eyebrow) { font-size: clamp(65px,7vw,115px); }
+.cinema-discover { pointer-events: auto; display: flex; gap: 48px; align-items: center; margin-top: 28px; padding-bottom: 13px; border-bottom: 1px solid #dcc297aa; text-transform: uppercase; font-size: 9px; letter-spacing: .14em; }.cinema-discover span { font-size: 19px; }
+.cinema-bottom { position: absolute; z-index: 4; left: var(--page-gutter); right: var(--page-gutter); bottom: 33px; display: flex; align-items: center; justify-content: space-between; padding-bottom: 17px; border-bottom: 1px solid #e8d6b63b; }
+.cinema-scroll { font-size: 7px; letter-spacing: .15em; text-transform: uppercase; display: flex; gap: 20px; align-items: center; }.cinema-scroll span { font-size: 23px; font-weight: 300; }
+.cinema-bottom nav { display: flex; gap: 32px; }.cinema-chapter { display: flex; gap: 10px; text-transform: uppercase; letter-spacing: .1em; font-size: 7px; opacity: .6; padding: 10px 0; }.cinema-chapter[aria-current='step'] { opacity: 1; }.cinema-chapter span { color: #f6e6ca; }
+.cinema-edition { font-size: 7px; letter-spacing: .16em; text-transform: uppercase; }.cinema-progress { position: absolute; left: 0; bottom: -1px; width: 100%; height: 1px; }.cinema-progress span { display: block; height: 1px; background: #d0b17c; transform: scaleX(var(--progress,0)); transform-origin: left; }
+.photographic-entrance { position: absolute; inset: 0; z-index: 10; overflow: hidden; background: transparent; }
+.photographic-silk { position: absolute; top: 0; bottom: 0; width: 50.2%; background-image: url('/images/generated/brocade.webp'); background-size: 200% 100%; }.photographic-silk-left { left: 0; background-position: left center; }.photographic-silk-right { right: 0; background-position: right center; }
+.photographic-entrance-copy { position: absolute; inset: 0; display: flex; justify-content: center; flex-direction: column; align-items: center; background: #21060528; color: #fff0cd; }.photographic-entrance-copy > span { font: 300 88px var(--font-editorial),Georgia,serif; letter-spacing: .22em; margin-left: .22em; text-shadow: 0 2px 20px #19060044; }.photographic-entrance-copy p { font-size: 8px; text-transform: uppercase; letter-spacing: .3em; margin: 22px 0; }.photographic-entrance-copy button { font-size: 8px; text-transform: uppercase; letter-spacing: .14em; padding: 20px; opacity: .65; }
+.cinematic-journey.is-static { height: 100svh; min-height: 620px; }.cinematic-journey.is-static .cinema-stage { position: relative; }.cinematic-journey.is-static .cinema-bottom nav,.cinematic-journey.is-static .cinema-progress { display: none; }
+.collections-section { padding-top: 41px; background-image: url('/textures/paper-grain.svg'); }.section-curve { top: -117px; height: 118px; }
+.collection-ribbon { position: absolute; width: 100%; height: 118px; left: 0; top: -117px; overflow: visible; pointer-events: none; }.collection-ribbon text { fill: #eedbc0; font: 12px var(--font-editorial),Georgia,serif; letter-spacing: .6px; }
+.collection-heading h2 { font-size: clamp(46px,5.1vw,75px); font-weight: 500; }.collection-heading .eyebrow { font-size: 8px; }.collection-copy p { font-size: 23px; }.collection-copy .eyebrow { font-size: 7px; }.collection-intro { margin-bottom: 42px; }.mood-rail { gap: 25px; }.mood-card { flex-basis: calc((100vw - 12vw - 140px) / 6); }.mood-image-mask { aspect-ratio: 3 / 4.4; outline: 1px solid #ad92741a; outline-offset: 5px; }.image-parallax { inset: 0 -24px; }.mood-label h3 { font-size: 8px; letter-spacing: .13em; }.mood-label { justify-content: center; gap: 8px; padding-top: 18px; }.mood-index { font-size: 7px; }.label-line,.image-caption { display: none; }.rail-controls { margin-top: 27px; }.rail-progress,.rail-counter,.rail-arrows { display: none; }.rail-hint { font-size: 7px; }.rail-hint::before { content: 'Six expressions of AIRA'; }.rail-hint .desktop-hint,.rail-hint .hint-line { display: none; }.section-breathing-room { height: 130px; }
+@media(min-width:768px) and (max-height:760px) { .cinema-intro { top: 29%; }.cinema-title { font-size: clamp(73px,7vw,104px); }.cinema-description { margin: 22px 0 24px; } }
+@media(min-width:768px) and (max-width:1100px) { .cinematic-journey .desktop-nav { gap: 21px; }.cinematic-journey .desktop-nav button,.cinematic-journey .nav-utilities button { font-size: 8px; }.mood-card { flex-basis: calc((100vw - 10vw - 140px) / 6); } }
+@media(max-width:767px) {
+  .cinematic-journey { height: 310svh; }.cinema-stage { min-height: 620px; }.cinematic-journey .site-header { height: 85px; }.cinematic-journey .wordmark { font-size: 33px; }.cinematic-journey .wordmark:after { font-size: 4px; }.cinematic-journey .nav-utilities button { font-size: 8px; }
+  .cinema-background img,.cinema-models img { object-position: 72% center; }.cinema-background,.cinema-models { transform-origin: 67% 26%; }
+  .cinema-intro { top: auto; bottom: 180px; }.cinema-title { font-size: clamp(62px,17vw,102px); }.cinema-intro .eyebrow { font-size: 6px; letter-spacing: .18em; margin-bottom: 19px; }.cinema-description { font-size: 10px; margin: 22px 0; }.cinema-enter { min-width: 224px; font-size: 7px; padding: 14px 16px; }
+  .cinema-shade { background: linear-gradient(180deg,#13080977,transparent 23%,transparent 37%,#10060a8c 76%,#160a0c80); }
+  .cinema-bottom { bottom: 30px; flex-wrap: wrap; gap: 17px; }.cinema-bottom nav { width: 100%; order: -1; justify-content: space-between; gap: 15px; }.cinema-chapter { flex-direction: column; font-size: 6px; gap: 6px; }.cinema-scroll,.cinema-edition { font-size: 6px; }
+  .cinema-caption > p:not(.eyebrow) { font-size: 39px; }.cinema-caption .eyebrow { font-size: 6px; }.cinema-thread { bottom: 26%; }.cinema-perspective { top: auto; bottom: 26%; }.cinema-expression { bottom: 26%; }.cinema-expression > p:not(.eyebrow) { font-size: 68px; }.cinema-discover { font-size: 8px; }
+  .photographic-silk { background-size: auto 100%; }.photographic-entrance-copy > span { font-size: 67px; }.photographic-entrance-copy p { font-size: 6px; }
+  .collections-section { padding-top: 30px; }.section-curve,.collection-ribbon { top: -64px; height: 65px; }.collection-ribbon text { display: none; }.collection-heading h2 { font-size: 54px; }.collection-copy p { font-size: 21px; }.collection-intro { margin-bottom: 34px; }.mood-rail { gap: 21px; }.mood-card { flex-basis: 76vw; }.mood-image-mask { aspect-ratio: 3 / 4.1; }.mood-label { justify-content: flex-start; gap: 11px; }.rail-arrows { display: flex; }.rail-hint::before { display: none; }.section-breathing-room { height: 90px; }
+}
+@media(prefers-reduced-motion:reduce) { .cinematic-journey { height: 100svh; }.cinema-background,.cinema-models { will-change: auto; }.cinema-background img,.cinema-models img { translate: none; } }
