@@ -1,0 +1,28 @@
+{
+  "preview": "http://127.0.0.1:3001/",
+  "desktop": {
+    "viewport": [1280, 720],
+    "decoded_video": [1440, 810],
+    "poster": "/images/store-poster-v9.jpg",
+    "ready_state": 4,
+    "forward_times_seconds": [2.097269, 5.299647],
+    "reverse_time_seconds": 3.322562,
+    "horizontal_overflow": false
+  },
+  "phone": {
+    "viewport": [390, 844],
+    "decoded_video": [540, 960],
+    "poster": "/images/store-poster-mobile-v9.jpg",
+    "ready_state": 4,
+    "forward_time_seconds": 2.284518,
+    "reverse_time_seconds": 0.956429,
+    "horizontal_overflow": false
+  },
+  "bridal_selector": "passed",
+  "bridal_link": "/shop?mood=Bridal",
+  "shop_collection_value": "Bridal",
+  "console_errors_and_warnings": [],
+  "viewport_restored": true,
+  "production_build": "passed; 20 static pages",
+  "typecheck": "passed"
+}

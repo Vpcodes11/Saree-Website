@@ -300,7 +300,7 @@ export default function StoreJourney({
           <img
             className={styles.film}
             src={chosenPoster}
-            alt="The AIRA private salon: walnut alcoves, brass and crystal chandeliers, bookmatched marble and sculptural silk displays"
+            alt="The AIRA private salon: folded saree libraries, individual paisley silk drapes, brass and crystal chandeliers, and ivory marble"
           />
         ) : (
           <video

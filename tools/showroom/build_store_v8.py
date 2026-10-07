@@ -1,10 +1,11 @@
 """AIRA's new textile palace. Geometry and materials only: no image planes or people."""
 import sys, pathlib, math, random, json
-sys.path.insert(0, r'C:\Users\Trade\.codex\tmp\aira-blender\runtime')
+import os
+if os.environ.get('AIRA_BLENDER_PYTHONPATH'): sys.path.insert(0, os.environ['AIRA_BLENDER_PYTHONPATH'])
 import bpy
 from mathutils import Vector
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-OUT = ROOT/'.preview'/'store-v8'; OUT.mkdir(exist_ok=True)
+OUT = ROOT/'.preview'/'store-v8'; OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 s = bpy.context.scene
 random.seed(41)
@@ -257,4 +258,3 @@ s.frame_set(0)
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'aira-store-v8.blend'))
 (OUT/'scene-report.json').write_text(json.dumps({'objects':len(s.objects),'meshes':len(bpy.data.meshes),'materials':len(bpy.data.materials),'images':[i.name for i in bpy.data.images if i.source in ('FILE','MOVIE','SEQUENCE')],'internal_render_images':[i.name for i in bpy.data.images if i.source not in ('FILE','MOVIE','SEQUENCE')],'lights':len(bpy.data.lights),'human_or_image_planes':0,'camera_keyframes':keys},indent=2))
 print('NEW SHOWROOM BUILT',len(s.objects),'objects; no photographic assets',flush=True)
-

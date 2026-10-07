@@ -1,0 +1,18 @@
+{
+  "no_humans_or_image_planes": true,
+  "native_views_per_variant": 84,
+  "variants": {
+    "desktop": {
+      "frames": 168,
+      "max_keyframe_gap_seconds": 0.25,
+      "fast_start": true,
+      "decode": "passed"
+    },
+    "mobile": {
+      "frames": 168,
+      "max_keyframe_gap_seconds": 0.25,
+      "fast_start": true,
+      "decode": "passed"
+    }
+  }
+}

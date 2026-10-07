@@ -1,5 +1,6 @@
 import sys,pathlib,time,os,argparse
-sys.path.insert(0,r'C:\Users\Trade\.codex\tmp\aira-blender\runtime')
+import os
+if os.environ.get('AIRA_BLENDER_PYTHONPATH'): sys.path.insert(0, os.environ['AIRA_BLENDER_PYTHONPATH'])
 import bpy
 ROOT=pathlib.Path(__file__).resolve().parents[2];OUT=ROOT/'.preview'/'store-v8'
 p=argparse.ArgumentParser();p.add_argument('--proof',action='store_true');p.add_argument('--mobile',action='store_true');p.add_argument('--samples',type=int,default=20);p.add_argument('--width',type=int,default=1440);args=p.parse_args()
@@ -28,4 +29,3 @@ with (OUT/(variant+('-proof-progress.txt' if args.proof else '-progress.txt'))).
             finally:os.dup2(stdout,1);os.dup2(stderr,2);os.close(stdout);os.close(stderr)
         message=f'{index+1}/{len(frames)} rendered; camera frame {frame}; {time.time()-start:.1f}s';progress.write(message+'\n');progress.flush();print(message,flush=True)
 print('V8 FRAMES COMPLETE',flush=True)
-

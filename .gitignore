@@ -10,3 +10,4 @@ artwork/aira-store-v[2-7].blend
 *.blend1
 *.blend2
 *.log
+__pycache__/

@@ -7,10 +7,10 @@ const nextConfig: NextConfig = {
   turbopack: { root: process.cwd() },
   async headers() {
     return [
-      "/video/aira-store-v8.mp4",
-      "/video/aira-store-mobile-v8.mp4",
-      "/images/store-poster-v8.jpg",
-      "/images/store-poster-mobile-v8.jpg",
+      "/video/aira-store-v9.mp4",
+      "/video/aira-store-mobile-v9.mp4",
+      "/images/store-poster-v9.jpg",
+      "/images/store-poster-mobile-v9.jpg",
     ].map((source) => ({
       source,
       headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],

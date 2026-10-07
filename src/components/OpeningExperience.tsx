@@ -38,9 +38,9 @@ export default function OpeningExperience({ videoSrc }: { videoSrc: string }) {
       <main id="main-content" className="aira-home" ref={home}>
         <StoreJourney
           src={videoSrc}
-          mobileSrc="/video/aira-store-mobile-v8.mp4"
-          poster="/images/store-poster-v8.jpg"
-          mobilePoster="/images/store-poster-mobile-v8.jpg"
+          mobileSrc="/video/aira-store-mobile-v9.mp4"
+          poster="/images/store-poster-v9.jpg"
+          mobilePoster="/images/store-poster-mobile-v9.jpg"
           loadingArtwork="/images/editorial-silk.webp"
           onExplore={explore}
           onReadyChange={setEntered}

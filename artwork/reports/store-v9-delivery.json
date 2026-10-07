@@ -1,0 +1,38 @@
+{
+  "desktop": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 810,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "nb_frames": "168"
+      }
+    ],
+    "format": {
+      "duration": "7.000000",
+      "size": "6495678"
+    }
+  },
+  "mobile": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 540,
+        "height": 960,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "nb_frames": "168"
+      }
+    ],
+    "format": {
+      "duration": "7.000000",
+      "size": "2145217"
+    }
+  }
+}

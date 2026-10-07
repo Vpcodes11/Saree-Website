@@ -1,0 +1,10 @@
+const fs = require('fs');
+const sharp = require('sharp');
+const path = require('path');
+const out = path.join(process.cwd(), 'public', 'textures', 'showroom');
+fs.mkdirSync(out, { recursive: true });
+const paisley = `<g fill="none" stroke="white"><path d="M55 8C119 29 128 86 95 118C69 145 22 127 29 92C34 67 62 64 69 82C77 103 48 117 47 99C43 121 78 125 91 102C107 75 79 39 55 8Z" stroke-width="3"/><path d="M58 23C98 43 105 79 87 99M37 88C39 77 53 67 61 58" stroke-width="1.4"/><path d="M48 127l-9 13m15-11-4 14m14-13 2 14m13-16 8 13m-45-28-12 3m62 6 9 8" stroke-width="2"/><circle cx="58" cy="87" r="3"/><path d="M66 38C81 49 89 60 87 72" stroke-width="2"/></g>`;
+const flower = `<g fill="none" stroke="white" stroke-width="1.8"><circle r="7"/>${Array.from({length:8},(_,i)=>`<ellipse cy="-13" rx="4.5" ry="8" transform="rotate(${i*45})"/>`).join('')}<circle r="23" stroke-dasharray="1 4"/></g>`;
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256"><rect width="256" height="256" fill="black"/><g transform="translate(4 1) scale(.73)">${paisley}</g><g transform="translate(132 125) scale(.73)">${paisley}</g><g transform="translate(170 57) scale(.8)">${flower}</g><g transform="translate(59 186) scale(.8)">${flower}</g><g fill="white"><circle cx="112" cy="125" r="2"/><circle cx="231" cy="212" r="2"/><circle cx="126" cy="238" r="2"/><circle cx="27" cy="140" r="2"/><circle cx="223" cy="25" r="2"/></g></svg>`;
+fs.writeFileSync(path.join(out, 'zari-paisley.svg'), svg);
+sharp(Buffer.from(svg)).png().toFile(path.join(out, 'zari-paisley.png')).then(()=>console.log('Woven paisley repeat prepared'));

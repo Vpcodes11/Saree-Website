@@ -4,7 +4,7 @@ The V8 showroom is a fresh Blender scene. It replaces the previous architecture,
 
 The interior has a 5.8m coffered walnut ceiling, onyx inserts, three concentric brass and crystal chandeliers, garnet pilasters, ten illuminated arched silk alcoves, bookmatched ivory marble with brass inlays, oval consultation tables, velvet seating and a monumental bridal arch. Sarees have woven surface detail, folded geometry, gold selvedges and physical cloth thickness. The suspended bridal textile sits in front of the walnut reeds without intersecting them.
 
-The packed scene is `artwork/aira-store-v8.blend`. Reproducible authoring and render scripts are `.preview/build_store_v8.py`, `.preview/render_store_v8.py` and `.preview/encode_store_v8.py`. The scene report records the object/material counts, camera keys and absence of photographic images.
+The packed scene is `artwork/aira-store-v8.blend`. Historical authoring and render scripts are `tools/showroom/build_store_v8.py`, `tools/showroom/render_store_v8.py` and `tools/showroom/encode_store_v8.py`. The scene report records the object/material counts, camera keys and absence of photographic images. The current homepage uses the V9 saree salon described in `SHOWROOM-V9.md`.
 
 Desktop delivery is `public/video/aira-store-v8.mp4` at 1440 × 810. Phone delivery is `public/video/aira-store-mobile-v8.mp4` at 540 × 960, rendered with its own portrait camera projection. It is not a narrow crop of the desktop film. Each seven-second film contains 84 native views at 12fps, repeated twice in a 24fps delivery container. The browser seeks the rendered camera path forwards and backwards as the visitor scrolls; movement has discrete native view increments. This is a rendered walkthrough, not freely navigable realtime 3D.
 

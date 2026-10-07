@@ -1,7 +1,8 @@
 import pathlib,json,subprocess
 from PIL import Image
 import sys
-sys.path.insert(0,r'C:\Users\Trade\.codex\tmp\aira-blender\runtime')
+import os
+if os.environ.get('AIRA_BLENDER_PYTHONPATH'): sys.path.insert(0, os.environ['AIRA_BLENDER_PYTHONPATH'])
 import bpy
 ROOT=pathlib.Path(__file__).resolve().parents[2];OUT=ROOT/'.preview'/'store-v8';PROOF=OUT/'encoded-proof';PROOF.mkdir(exist_ok=True)
 scene=json.loads((OUT/'scene-report.json').read_text(encoding='utf-8'))
